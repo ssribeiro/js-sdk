@@ -21,6 +21,8 @@ import {
 // import nacl from 'tweetnacl';
 import { nacl } from '@lit-protocol/nacl';
 
+import { Blob } from 'buffer';
+
 // if 'wasmExports' is not available, we need to initialize the BLS SDK
 if (!globalThis.wasmExports) {
   initWasmBlsSdk().then((exports) => {
